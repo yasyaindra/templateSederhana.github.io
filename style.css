@@ -1,0 +1,82 @@
+
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 60px;
+}
+body {
+    font:16px/28px arial, sans-serif;
+    background-color: #eaeaea;
+    color:#333;
+    background-image: url(img/bg.jpg); }
+
+.container {
+    margin:auto;
+    width:800px;
+    background-color:white;
+}
+
+.header {
+    padding:20px
+}
+
+.header .judul {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.header ul li {
+    display:inline-block;
+    margin-top:20px;
+    margin-right:10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.header a {
+    text-decoration: none;
+    padding:7px;
+}
+
+
+.header a:hover{
+    background-color: lightblue;
+}
+
+.content {
+    padding:20px;
+    margin-top:-40px;
+}
+
+.content h2 {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.hero {
+    height: 220px;
+    background-image: url(img/hutan.jpg);
+    background-size:contain;
+    background-position: center;
+    border-top:10px solid salmon;
+    border-bottom:10px solid lightblue;
+}
+
+.content .penulis {
+    font-style: italic;
+    font-size: 11px;
+    margin-top:-25px;
+}
+
+.content .post {
+    margin-top: -19px;
+}
+
+.content .penulis a {
+    text-decoration: none;
+}
+
+.footer {
+    text-align: center;
+    background-color: salmon;
+    font-weight: bold;
+}
