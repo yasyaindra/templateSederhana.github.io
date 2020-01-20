@@ -11,7 +11,7 @@ body {
 
 .container {
     margin:auto;
-    width:800px;
+    width:900px;
     background-color:white;
 }
 
@@ -38,22 +38,45 @@ body {
 }
 
 
+
 .header a:hover{
     background-color: lightblue;
 }
-
-.content {
-    padding:20px;
-    margin-top:-40px;
+.sidebar {
+    width:300px;
+    float: right;
 }
 
-.content h2 {
+.sidebar h3 {
+    font-weight: bold;
+    color: blue;
+}
+
+.sidebar img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    padding-right:20px
+}
+.sidebar p {
+    font:12px/18px arial;
+
+}
+.main {
+    width: 600px;
+    padding:20px;
+    margin-top:-40px;
+    box-sizing: border-box;
+    float: left;
+}
+
+.main h2 {
     font-size: 30px;
     font-weight: bold;
 }
 
 .hero {
-    height: 220px;
+    height: 320px;
     background-image: url(img/hutan.jpg);
     background-size:contain;
     background-position: center;
@@ -61,17 +84,17 @@ body {
     border-bottom:10px solid lightblue;
 }
 
-.content .penulis {
+.main .penulis {
     font-style: italic;
     font-size: 11px;
     margin-top:-25px;
 }
 
-.content .post {
+.main .post {
     margin-top: -19px;
 }
 
-.content .penulis a {
+.main .penulis a {
     text-decoration: none;
 }
 
@@ -79,4 +102,22 @@ body {
     text-align: center;
     background-color: salmon;
     font-weight: bold;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
